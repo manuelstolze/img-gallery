@@ -1,0 +1,15 @@
+<div class="grid-container">
+
+  <div *ngFor="let image of imageService.images"
+       class="card-container" style="margin: 16px; padding: 16px">
+    <div class="card img-card">
+      <img
+        src="{{image.img}}"
+        alt=""
+      />
+
+      <app-tag-list [tags]="image.tags"></app-tag-list>
+
+    </div>
+  </div>
+</div>
